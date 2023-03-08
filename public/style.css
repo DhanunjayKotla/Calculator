@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    user-select: none;
+    font-family: 'Inter', sans-serif;
+}
+
+#calculator{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(69, 69, 109);
+    padding: 40px 0px 0px 0px;
+    box-sizing: border-box;
+}
+
+.top{
+    display: flex;
+    width: 480px;
+    margin: 0px auto 20px auto;
+    justify-content: space-between;
+}
+.name{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.themetitle{
+    color: rgb(218, 213, 213);
+    font-size: 0.8em;
+    font-weight: 600;
+    height: max-content;
+    margin: auto 10px auto auto;
+}
+.theme{
+    width: 15%;
+    background-color: rgb(45, 45, 95);
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+}
+.theme1{
+    background-color: rgb(199, 51, 51);
+    height: 100%;
+    width: 50%;
+    border-radius: 30px;
+}
+.theme2{
+    height: 100%;
+    width: 50%;
+    border-radius: 30px;
+}
+
+.display{
+    border-radius: 10px;
+    width: 480px;
+    background-color: rgb(30, 30, 51);
+    margin: 0px auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.display input{
+    border: 0px;
+    width: 100%;
+    background-color: rgb(30, 30, 51);
+    height: 45px;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 5px 0px;
+    text-align: right;
+}
+
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 480px;
+    margin: 20px auto;
+    background-color: rgb(42, 42, 70);
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+.keyboardkeys{
+    text-align: center;
+    background-color: rgb(233, 231, 231);
+    padding: 9px 0px;
+    font-size: 28px;
+    font-weight: 800;
+    border-radius: 10px;
+    color: rgb(61, 61, 100);
+}
+.keyboardkeys:hover{
+    background-color: white;
+}
+.keyboardkeys:active{
+    background-color: lightblue;
+}
+.keyboard :nth-child(4), .keyboard :nth-child(17){
+    background-color: rgb(92, 92, 139);
+    color: white;
+}
+.keyboard :nth-child(18){
+    background-color: rgb(199, 51, 51);
+    color: white;
+    grid-column: span 2;
+}
+.keyboard :nth-child(17){
+    grid-column: span 2;
+}
+
+
